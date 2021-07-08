@@ -32,6 +32,7 @@ slotMachine() {
 	frame.add(panel);
 	panel.add(button);
 	button.addActionListener(this);
+	button.setVisible(true);
 	try {
 		cherry = createLabelImage("Cherry.jpeg");
 		lime = createLabelImage("lime.png");
@@ -46,6 +47,7 @@ slotMachine() {
 	panel.add(label2);
 	panel.add(label3);
 	frame.pack();
+	
 }
 private JLabel createLabelImage(String fileName) throws MalformedURLException{
     URL imageURL = getClass().getResource(fileName);
